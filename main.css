@@ -1,48 +1,58 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 button {
-  display: block;
-  margin-top: 25px;
+	display: block;
+	margin: 25px;
 }
 
 button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 #chalQuiz-form {
-  width: 250px;
+	width: 250px;
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .chalQuestions {
-  list-style: none;
-  padding-left: 0;
+	/*list-style: none;*/
+	padding-left: 0;
 }
 
-.chalQuestions > li {
-  margin-bottom: 20px;
-  border: 1px solid grey;
-  padding: 20px;
+.answer {
+	display: block;
+	margin-bottom: 20px;
+	border: 1px solid grey;
+	padding: 20px;
 }
 
-.question-ind {
-  display: block;
-  color: grey;
-  font-style: italic;
-  font-size: 20px;
-  margin-bottom: 15px;
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+}
+
+.tracker, .score {
+	border: 1px solid black;
+	color: grey;
+	font-style: italic;
+	font-size: 20px;
+	margin: 15px 0 15px 0;
+	width: 33.33%;
+	text-align: center;
 }

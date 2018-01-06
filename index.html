@@ -10,12 +10,36 @@
 <body>
     <div class="container">
         <h1>Challenger Quiz</h1>
-        <form id="js-chalQuiz-form chalQuiz-form">
-            <label for="challQuizTitle">Ladies and Gentlemen, Start your engines</label>
-            <button type="submit">Go! Vrooom</button>
-        </form>
-        <ul class="chalQuestions js-chalQuestions">
-        </ul>
+        <form id="js-quizForm quizForm">
+        	<div class="js-question question">
+        		<label for="question">Ladies and Gentlemen, Start your engines</label>
+        		<button type="submit">Go! Vrooom</button>
+        	</div>
+        	<div class="js-answer answer">
+	        	<input type="radio" name="answer-one">
+	        	<label for="answer-one">Answer 1</label>
+			</div>
+			<div class="js-answer answer">
+	        	<input type="radio" name="answer-two">
+	        	<label for="answer-two">Answer 2</label>
+			</div>
+			<div class="js-answer answer">
+	        	<input type="radio" name="answer-three">
+	        	<label for="answer-three">Answer 3</label>
+			</div>
+			<div class="js-answer answer">
+	        	<input type="radio" name="answer-four">
+	        	<label for="answer-one">Answer 4</label>
+	        </div>	
+    	</form>
+    	<div class="flex-container">
+	    	<div class="js-tracker tracker">
+	    		<p>Question: <span>1/10</span></p>
+	    	</div>
+	    	<div class="js-score score">
+	    		<p><span>0/0</span>Correct</p>
+	    	</div>
+	    </div>
     </div>
 	<script
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
