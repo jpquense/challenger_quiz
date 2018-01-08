@@ -3,86 +3,46 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-}
-
-button {
-	display: block;
-	margin: 25px;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-.intro {
+	font-family: 'Roboto Mono', monospace;
 	font-size: 20px;
 }
 
-.hidden {
-	display: none;
-}
-
-#chalQuiz-form {
-	width: 250px;
-}
-
-.container {
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-.begin {
-	font-size: 20px;
-}
-
-.question {
-	/*list-style: none;*/
-	padding-left: 0;
-	margin: 10px 0 15px 0;
-	font-size: 20px
-
-}
-
-.answer {
-	display: block;
+.demon {
 	margin-bottom: 20px;
-	border: 1px solid grey;
-	padding: 20px;
-	font-size: 18px;
 }
 
-.answer > label {
-	margin-left: 10px;
+.demon > img{
+	width: 100%;
 }
 
-.flex-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-
+.p1{
+	text-align: left;
 }
 
-.solution p{
-	border: 1px solid black;
-	font-size: 18px;
-	margin: 15px 0 15px 0;
-	padding: 15px 0 15px 0;
+.p2 {
 	text-align: center;
 }
 
-.tracker, .score, .next, .start-over{
-	border: 1px solid black;
-	color: grey;	
-	font-style: italic;
-	font-size: 16px;
-	margin: 15px 0 15px 0;
-	width: 25%;
-	text-align: center;
+.p3 {
+	text-align: right;
 }
 
-.next a{
-	color: grey;
+.begin  > p:last-child {
+	margin: 25px 0 25px 0;
+	background-color: black;
+	font-size: 24px;
+	text-align: center;
+	padding: 15px;
+}
+
+.begin > p > a {
+	color: white;
+	text-decoration: none;
+}
+
+.begin > p > a:hover {
+	color: red;
+	text-decoration: none;
 }
 
 .info, .info2 {
@@ -90,9 +50,60 @@ button:hover {
 	color: grey;
 	font-style: italic;
 	font-size: 18px;
+	width: 100%;
 	margin: 10px 0 10px 0;
-	width: 33.33%;
 	text-align: center;
 }
 
+.hidden {
+	display: none;
+}
+
+.question {
+	list-style: none;
+	padding-left: 0;
+	margin: 10px 0 15px 0;
+	font-size: 20px
+
+}
+
+.answer {
+	margin-bottom: 20px;
+	border: 1px solid grey;
+	padding: 20px;
+	font-size: 18px;
+}
+
+
+.answer > label {
+	margin-left: 10px;
+}
+
+.footer  p {
+	border: 1px solid black;
+	color: grey;	
+	font-style: italic;
+	font-size: 16px;
+	margin: 15px 0 15px 0;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+
+.footer p  a {
+	color: grey;
+	text-decoration: none;
+}
+
+.footer p a:hover {
+	color: red;
+}
+
+/*.solution p{
+	border: 1px solid black;
+	font-size: 18px;
+	margin: 15px 0 15px 0;
+	padding: 15px 0 15px 0;
+	text-align: center;
+}*/
 
