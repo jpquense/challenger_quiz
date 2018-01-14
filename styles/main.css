@@ -7,15 +7,12 @@ body {
 	font-size: 20px;
 }
 
-.demon {
-	margin-bottom: 20px;
-}
-
-.demon > img{
+img {
+	margin: 20px auto 20px auto;
 	width: 100%;
 }
 
-.p1{
+.p1 {
 	text-align: left;
 }
 
@@ -27,22 +24,20 @@ body {
 	text-align: right;
 }
 
-.begin  > p:last-child {
-	margin: 25px 0 25px 0;
-	background-color: black;
-	font-size: 24px;
-	text-align: center;
-	padding: 15px;
+.begin > p > button {
+	width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.begin > p > a {
-	color: white;
-	text-decoration: none;
-}
-
-.begin > p > a:hover {
+.begin > p > button:hover {
 	color: red;
-	text-decoration: none;
+	cursor: pointer;
 }
 
 .info, .info2 {
@@ -55,16 +50,16 @@ body {
 	text-align: center;
 }
 
-.hidden {
-	display: none;
-}
-
 .question {
-	list-style: none;
 	padding-left: 0;
 	margin: 10px 0 15px 0;
 	font-size: 20px
+}
 
+.wrapUp {
+	padding-left: 0;
+	margin: 10px 0 10px 0;
+	font-size: 18px
 }
 
 .answer {
@@ -74,12 +69,23 @@ body {
 	font-size: 18px;
 }
 
-
-.answer > label {
-	margin-left: 10px;
+ .solution-correct {
+ 	background-color: green;
+ 	color: white;
+ 	font-size: 24px;
+	text-align: center; 	
+	margin-top: 15px;
 }
 
-.footer  p {
+ .solution-wrong {
+ 	background-color: maroon;
+ 	color: white;
+ 	font-size: 24px;
+	text-align: center; 	
+	margin-top: 15px;
+}
+
+.footer p {
 	border: 1px solid black;
 	color: grey;	
 	font-style: italic;
@@ -90,20 +96,28 @@ body {
 	padding: 15px;
 }
 
-.footer p  a {
-	color: grey;
-	text-decoration: none;
+.footer p button {
+    background-color: white;
+    border: none;
+    color: grey;
+    padding: 0;	
 }
 
-.footer p a:hover {
+.footer p button:hover {
 	color: red;
+	cursor: pointer;
 }
 
-/*.solution p{
+.finish p {
 	border: 1px solid black;
 	font-size: 18px;
 	margin: 15px 0 15px 0;
 	padding: 15px 0 15px 0;
 	text-align: center;
-}*/
+}
 
+.finish-score {
+	color: green;
+	font-style: italic;
+	font-size: 20px;
+}

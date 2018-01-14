@@ -2,36 +2,59 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
 	<title>Challenger Quiz</title>
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/float-grid.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Challenger Quiz</h1>
+	<header>
+		<div class="row">
+			<div class="col-12">
+				<h1>Challenger Quiz</h1>
+			</div>
+		</div>	
+		<div class="row">	
+			<div class="demon col-6">
+				<img src="https://media.ed.edmunds-media.com/dodge/challenger/2015/oem/2015_dodge_challenger_coupe_scat-pack_fq_oem_3_1280.jpg">
+			</div>
+			<div class="demon col-6">
+				<img src="https://hothardware.com/ContentImages/NewsItem/39893/content/small_challenger_srt_hellcat.jpg">
+			</div>
+		</div>
 
-        <div class="solution js-solution">
-        	<p>You Passed! Your score was"<span>fofiddlefum</span>" <br>Congradulations!</p>
-            <p>You failed. Your score was: "<span>fofiddlefum</span>" <br>Please try again.</p>
-        	<p>Press start over to try again.</p>
-        </div>
-    	<div class="flex-container">
-	    	<div class="js-tracker tracker">
-	    		<p>Question: <span>1/10</span></p>
-	    	</div>
-	    	<div class="js-score score">
-	    		<p><span>0/0</span>Correct</p>
-	    	</div>
-	    	<div class="js-start-over start-over">
-	    		<p><a href="#next">Start Over</a></p>
-	    	</div>
-	    </div>
-    </div>
+	</header>
+	<main>
+		<div class="row">
+			<div class="finish js-finish col-12">
+				<p>You Passed! Your score was: <span class="finish-score">10/10</span> Congradulations!</p>
+			</div>
+			<div class="finish js-finish col-12">
+				<p>You failed. Your score was: <span class="finish-score">0/10</span>" Please try again.</p>
+			</div>
+			<div class="finish js-finish col-12">
+				<p>Press the peddle to start over again.</p>
+			</div>
+
+		</div>
+	</main>
+	<footer>
+		<div class="row footer">
+
+			<div class="js-back back col-6">
+				<p><a href="answer1.html">Back</a></p>
+			</div>
+			<div class="js-star-over start-over col-6">
+				<p><a href="start.html">Sart over</a></p>
+			</div>
+		</div>
+	</footer>
 	<script
-	  src="https://code.jquery.com/jquery-3.2.1.min.js"
-	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  crossorigin="anonymous"></script>
-    <script type="text/javascript" src="index.js"></script>
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
