@@ -1,63 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<title>Challenger Quiz</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<link rel="stylesheet" href="styles/float-grid.css" />
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/float-grid.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
 <body>
 	<div class="js-app">
 		<header role="banner">
-			<div class="row">
+			<section role="region" class="row">
 				<div class="col-12">
 					<h1>Challenger Quiz</h1>
 				</div>
-			</div>	
-			<div class="row">	
+			</section>	
+			<section role="region" class="row">	
 				<div class="demon col-12">
 					<img src="https://blog.caranddriver.com/wp-content/uploads/2017/04/Dodge-Challenger-Demon-09-876x535.jpg" alt="Red Dodge Challenger Demon launching in a cloud of burnt rubber!">
 				</div>
-			</div>
+			</section>
 		</header>
-		<main role="main">
-			<div class="row">
-				<div class="intro column-12">
-					<div class="p1">
-						<h2>Intro to Modern Muscle</h2>
-						<p>Since the dawn of the muscle car</p>
-					</div>
-					<div class="p2">
-						<p>The Dodge Challenger has held its own</p>
-						<p>As an Icon, a Symbol</p>
-					</div>
-					<div class="p3">
-						<p>Of speed and Power</p>
-						<p>Test your knowledge of this</p>
-						<p>Modern Legend</p>
-					</div>
+		
+		<main role="main" class="row">
+			<section role="region" class="intro column-12">
+				<div class="p1">
+					<h2>Intro to Modern Muscle</h2>
+					<p>Since the dawn of the muscle car</p>
 				</div>
-			</div>
+				<div class="p2">
+					<p>The Dodge Challenger has held its own</p>
+					<p>As an Icon, a Symbol</p>
+				</div>
+				<div class="p3">
+					<p>Of speed and Power</p>
+					<p>Test your knowledge of this</p>
+					<p>Modern Legend</p>
+				</div>
+			</section>
 		</main>
-		<nav role="navigation">
-			<div class="row">	
-				<div class="js-begin begin col-12">
-					<p>Ladies and Gentlemen, Start your engines</p>
-					<p><button>Go! Vroom, Vrooooom . . .</button></p>
-				</div>
-				<div class="row">
-					<div class="info col-6">
-						<p>Thank you for your time:)</p>
-					</div>
-					<div class="info2 col-6">
-						<p>Please enjoy the burnout:)</p>
-					</div>
-				</div>
+		
+		<nav role="navigation" class="row">
+			<div class="js-begin begin col-12">
+				<p>Ladies and Gentlemen, Start your engines</p>
+				<p><button>Go! Vroom, Vrooooom . . .</button></p>
 			</div>
-		</nav>	
+			<section role="region" class="row">
+				<div class="info col-6">
+					<p>Thank you for your time:)</p>
+				</div>
+				<div class="info col-6">
+					<p>Please enjoy the burnout:)</p>
+				</div>
+			</section>
+		</nav>
 	</div>
 	<script
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
