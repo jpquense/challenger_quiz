@@ -55,7 +55,7 @@ function renderCurrentQuestion() {
 	const answersHtml = QUESTIONS[questionIndex].answers.map(function(item, index) {
 		return `
 			<div class="answer col-12">
-	        	<input type="radio" name="answer" id="${index}" value="${index}">
+	        	<input type="radio" name="answer" aria-labelledby="answer${index + 1}" id="${index}" value="${index}">
 	        	<label class="question-answer" for="${index}">${item}</label>
 			</div>`
 	}).join('');
@@ -68,7 +68,7 @@ function renderCurrentQuestion() {
 		
 		<main role="main" class="row">
 		  <form action="/some-server-endpoint" method ='post'>
-	        <fieldset name="questionsAnswers">
+	        <fieldset name="questionsAnswers" role="group">
 	      	    <legend class="question col-12">${QUESTIONS[questionIndex].question}</legend>
 	  				${answersHtml}
 	        <div class="col-12 js-errMessage"></div>
